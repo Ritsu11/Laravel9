@@ -1,6 +1,4 @@
-# Hew2020 Dockerfile
-
-カケオク用のDockerfile
+# Laravel Dockerfile
 
 # 導入手順
 
