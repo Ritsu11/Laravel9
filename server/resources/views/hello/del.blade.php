@@ -3,16 +3,14 @@
 @section('title', 'Add')
 @section('menubar')
     @parent
-    新規作成ページ
+    削除ページ
 @endsection
 @section('content')
     <table>
-       <form action="/hello/add" method="POST">
+       <form action="/hello/del" method="POST">
         {{ csrf_field() }}
            <tr>
-               <tr><th>name: </th><td><input type="text" name="name"></td></tr>
-               <tr><th>mail: </th><td><input type="text" name="mail"></td></tr>
-               <tr><th>age: </th><td><input type="text" name="age"></td></tr>
+               <tr><th>id: </th><td><input type="number" name="id"></td></tr>
                <tr><th></th><td><input type="submit" value="send"></td></tr>
            </tr>
        </form>
