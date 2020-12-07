@@ -1,6 +1,6 @@
 @extends('layouts.helloapp')
 
-@section('title', 'Add')
+@section('title', 'Edit')
 @section('menubar')
     @parent
     更新ページ

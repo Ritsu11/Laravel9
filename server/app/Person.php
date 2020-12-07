@@ -15,6 +15,11 @@ class Person extends Model
         static::addGlobalScope(new ScopePerson);
     }
 
+    public function board()
+    {
+        return $this->hasMany('App\Board');
+    }
+
     protected $guarded = ['id'];
 
     public static $rules = [

@@ -1,6 +1,6 @@
 @extends('layouts.helloapp')
 
-@section('title', 'Add')
+@section('title', 'Del')
 @section('menubar')
     @parent
     削除ページ
