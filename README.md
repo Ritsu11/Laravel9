@@ -7,7 +7,7 @@ Dockerはインストール済みが前提
 
 ```bash
 $ docker-compose up -d
-$ docker-cpmpose exec web bash
+$ docker-cmpose exec web bash
 
 root@???/var/www/html# composer update
 root@???/var/www/html# chown www-data storage/ -R
