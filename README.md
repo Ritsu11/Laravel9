@@ -1,25 +1,40 @@
 # Laravel Dockerfile
 
-# 導入手順
+## Laravel9 用
 
-Dockerはインストール済みが前提  
-作業スペースにクローン後以下のコマンドを同ディレクトリで順に実行  
+## 導入手順
+
+Docker インストール済みが前提  
+作業スペースにクローン後以下のコマンドを同ディレクトリで順に実行
+
+Docker 起動
 
 ```bash
 $ docker-compose up -d
-$ docker-cmpose exec web bash
+$ docker-compose exec web bash
 
-root@???/var/www/html# composer update
-root@???/var/www/html# chown www-data storage/ -R
+root@???/var/www/html # composer update
+root@???/var/www/html # chown www-data storage/ -R
 ```
 
-# Note
- 
+DB アクセス時
+
+```bash
+root@???/var/www/html # mysql -u hew -h 172.20.0.1 -P 13306 -p
+```
+
+## Note
+
 わからない点があれば連絡ください
 
-# Version
-Composer version 2.0.4    
-Node.js v10.22.1  
-MySQL 5.7  
+mail : r.ishimi0213@gmail.com
 
-mysql -u hew -h 172.20.0.1 -P 13306 -p
+## Version
+
+Laravel :9.1.0
+
+Composer :2.2.5
+
+Node.js :16.13
+
+MySQL :8.0
